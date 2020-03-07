@@ -45,7 +45,8 @@ $(document).ready(function(){
       let score = score_indicate();
       for (let i = 0; i < score.length; i++){
         if (score[i] < 60){
-           judge.text('不合格');
+           judge.text('不合格')
+           break;
         } else {
            judge.text('合格');
         };
